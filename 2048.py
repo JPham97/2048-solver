@@ -17,7 +17,7 @@ DEEP_ORANGE = (255, 87, 34)
 BROWN = (121, 85, 72)
 COLORS = { 0:BLACK, 2:RED, 4:PINK, 8:PURPLE, 16:DEEP_PURPLE,
                32:BLUE, 64:TEAL, 128:L_GREEN, 256:GREEN,
-               512:ORANGE, 1024: DEEP_ORANGE, 2048:BROWN, 
+               512:ORANGE, 1024: DEEP_ORANGE, 2048:BROWN,
                4096:DEEP_PURPLE, 8192:DEEP_ORANGE, 16384:BROWN, 32768:TEAL}
 
 class Game:
@@ -43,7 +43,7 @@ class Game:
 				if self.checkIfCanGo():
 					#Hint: Check the use of deepcopy
 					ai = Gametree(copy.deepcopy(self.tileMatrix), 3, self.total_points)
-					direction = ai.compute_decision() 
+					direction = ai.compute_decision()
 					self.move(direction)
 				else:
 					auto = False
