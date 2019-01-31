@@ -33,7 +33,7 @@ class Game:
 		self.tileMatrix = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
 		self.undoMat = []
 	def loop(self, fromLoaded = False):
-		auto = False
+		auto = True
 		if not fromLoaded:
 			self.placeRandomTile()
 			self.placeRandomTile()
